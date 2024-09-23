@@ -15,10 +15,80 @@ const Services = () => {
         <span className="section__subtitle">Create + Collaborate</span>
     
         <div className="services__container container grid">
+
+        <div className="services__content">
+                <div>
+                    <HiOutlineClipboardList className="services__icon" />
+                    <h3 className="services__title">DevOps<br />CloudOps</h3>
+                </div>
+                <span className="services__button" onClick={() => toggleTab(3)}>
+                    View More
+                    <HiOutlineArrowSmRight className="services__button-icon" />
+                </span>
+                <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
+                    <div className="services__modal-content">
+                        <HiX onClick={() => toggleTab(0)} className="services__modal-close" />
+                        <h3 className="services__modal-title">Deployment & Cloud Native and Management Solutions</h3>
+                        <p className="services__modal-description">
+                            Over 2 years experience in DevOps & Cloud providing quality work.
+                        </p>
+                        <ul className="services__modal-services grid">
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                    Designing scalable & secure mircroservices architecture
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                  Managing Infrastructure with Terraform
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                  Automation Workflow & Tasks
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                  Continious Intergration & Continious Delivery
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                  Code Quality and Image Security(SonarQube & Trivy like tools)
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                    Cloud Management and Support
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                    Kubernetes and scalabel secure solutions
+                                </p>
+                            </li>
+                            <li className="services__modal-service">
+                                <HiOutlineCheckCircle className="services__modal-icon" />
+                                <p className="services__modal-info">
+                                    Dockerization & Cost effective Solutions 
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div className="services__content">
                 <div>
                     <HiOutlineClipboardList className="services__icon" />
-                    <h3 className="services__title">Web + App<br />Developer</h3>
+                    <h3 className="services__title">Web <br />Developer</h3>
                 </div>
                 <span className="services__button" onClick={() => toggleTab(1)}>
                     View More
@@ -29,13 +99,13 @@ const Services = () => {
                         <HiX onClick={() => toggleTab(0)} className="services__modal-close" />
                         <h3 className="services__modal-title">Developer</h3>
                         <p className="services__modal-description">
-                            Over 3 years of experience in web development providing quality work.
+                            Building best online platforms and providing quality work.
                         </p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
-                                    Web page and app development
+                                    Performance oriented websites
                                 </p>
                             </li>
                             <li className="services__modal-service">
@@ -44,17 +114,17 @@ const Services = () => {
                                     Integrate creative colloboration
                                 </p>
                             </li>
-                            <li className="services__modal-service">
+                            {/* <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
                                     Provide product mockups
                                 </p>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
             </div>
-
+{/* 
             <div className="services__content">
                 <div>
                     <HiOutlineClipboardList className="services__icon" />
@@ -93,47 +163,8 @@ const Services = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="services__content">
-                <div>
-                    <HiOutlineClipboardList className="services__icon" />
-                    <h3 className="services__title">Digital<br />Branding</h3>
-                </div>
-                <span className="services__button" onClick={() => toggleTab(3)}>
-                    View More
-                    <HiOutlineArrowSmRight className="services__button-icon" />
-                </span>
-                <div className={toggleState === 3 ? "services__modal active-modal" : "services__modal"}>
-                    <div className="services__modal-content">
-                        <HiX onClick={() => toggleTab(0)} className="services__modal-close" />
-                        <h3 className="services__modal-title">Branding</h3>
-                        <p className="services__modal-description">
-                            Over 3 years experience in branding providing quality work.
-                        </p>
-                        <ul className="services__modal-services grid">
-                            <li className="services__modal-service">
-                                <HiOutlineCheckCircle className="services__modal-icon" />
-                                <p className="services__modal-info">
-                                    Company logo and branding
-                                </p>
-                            </li>
-                            <li className="services__modal-service">
-                                <HiOutlineCheckCircle className="services__modal-icon" />
-                                <p className="services__modal-info">
-                                    Custom website and landing page
-                                </p>
-                            </li>
-                            <li className="services__modal-service">
-                                <HiOutlineCheckCircle className="services__modal-icon" />
-                                <p className="services__modal-info">
-                                    Design product mockups
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
         
     </section>

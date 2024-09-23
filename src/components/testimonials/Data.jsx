@@ -7,18 +7,18 @@ export const Data = [
         id: 1,
         image: Image1,
         title: "Kris C.",
-        description: "Executed the concept with clarity and adaptability.",
+        description: "Containerized our Application resulting in lower cloud cost.",
     },
     {
         id: 2,
         image: Image2,
         title: "Mark S.",
-        description: "Provided creative insight and improvment to the project.",
+        description: "Migrated our application from Docker-compose to Kubernetes",
     },
     {
         id: 3,
         image: Image3,
         title: "Gemma B.",
-        description: "Fixed the glitch and made the site easier to use.",
+        description: "Migrated our on prem Database to CloudSQL",
     },
 ];
