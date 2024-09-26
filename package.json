@@ -1,4 +1,7 @@
 {
+   "homepage": "https://sumitdethe27.github.io/react-portfolio",
+  "name": "myproj",
+  "version": "1.0.0",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
