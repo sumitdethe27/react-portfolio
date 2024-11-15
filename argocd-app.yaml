@@ -2,16 +2,19 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: portfolio-app
+  namespace: argocd
 spec:
-  project: default  # Adding the project field, set to 'default' for default project
-  destination:
-    server: https://kubernetes.default.svc  # Points to the Kubernetes cluster to deploy to
-    namespace: default  # The Kubernetes namespace where resources will be deployed
+  project: default
   source:
-    repoURL: git@github.com:sumitdethe27/react-portfolio.git  # Git repository URL using SSH for pulling the repo
-    targetRevision: main  # Branch to sync (can be 'main', 'master', or any branch)
-    path: manifests  # Path inside the repo where Kubernetes manifests are stored
+    repoURL: git@github.com:sumitdethe27/react-portfolio.git
+    targetRevision: HEAD
+    path: .
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
   syncPolicy:
     automated:
-      prune: true  # Automatically delete resources that are no longer defined in the repository
-      selfHeal: true  # Automatically fix any out-of-sync resources (e.g., if someone manually modifies resources)
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
