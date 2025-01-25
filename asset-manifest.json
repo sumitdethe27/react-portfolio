@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.78b8302c.css",
-    "main.js": "/react-portfolio/static/js/main.3f0e2755.js",
+    "main.js": "/react-portfolio/static/js/main.e98a6491.js",
     "static/media/aboutBW.jpeg": "/react-portfolio/static/media/aboutBW.c2bd3b6b55774aa9cb56.jpeg",
-    "static/media/sumit-dethe-resume.pdf": "/react-portfolio/static/media/sumit-dethe-resume.fde2fd20c75cdb654db3.pdf",
+    "static/media/sumit-dethe-resume.pdf": "/react-portfolio/static/media/sumit-dethe-resume.f78b2dae05784e2059ef.pdf",
     "static/media/project2.webp": "/react-portfolio/static/media/project2.fc906070e9796abe3650.webp",
     "static/media/project3.webp": "/react-portfolio/static/media/project3.b094b696f75369270c95.webp",
     "static/media/project1.webp": "/react-portfolio/static/media/project1.f2c54a35bc5d07af37ea.webp",
@@ -12,10 +12,10 @@
     "static/media/man.png": "/react-portfolio/static/media/man.58008a565ab6f0db4d93.png",
     "index.html": "/react-portfolio/index.html",
     "main.78b8302c.css.map": "/react-portfolio/static/css/main.78b8302c.css.map",
-    "main.3f0e2755.js.map": "/react-portfolio/static/js/main.3f0e2755.js.map"
+    "main.e98a6491.js.map": "/react-portfolio/static/js/main.e98a6491.js.map"
   },
   "entrypoints": [
     "static/css/main.78b8302c.css",
-    "static/js/main.3f0e2755.js"
+    "static/js/main.e98a6491.js"
   ]
 }
